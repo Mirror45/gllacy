@@ -11,9 +11,18 @@
   margin: 0;
   margin-bottom: 12.5px;
   width: 303px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .blog__title {
   margin: 0;
   width: 303px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: $basic-extra-dark;
 }

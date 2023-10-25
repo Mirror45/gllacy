@@ -8,10 +8,7 @@
   margin-bottom: 56px;
   width: 443px;
   justify-self: center;
-
   text-align: center;
-  word-spacing: 1px;
-  letter-spacing: -2px;
 }
 
 .present__grid {
@@ -23,20 +20,18 @@
 .present__column {
   padding: 40px;
   padding-bottom: 36px;
-
   background-color: $special-neutral;
   background-repeat: no-repeat;
-
   border-radius: 16px;
 }
 
-.present--raspberry {
+.present__column--raspberry {
   background-image: url(/src/img/photo-of-raspberries.png);
   background-position: top 27px right 15px;
   background-size: 182px;
 }
 
-.present--marshmallow {
+.present__column--marshmallow {
   background-image: url(/src/img/photo-of-marshmallow.png);
   background-position: top 17px right 6px;
   background-size: 234px;
@@ -45,16 +40,19 @@
 .present__subtitles {
   margin: 0;
   margin-bottom: 16px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: $basic-extra-dark;
 }
 
 .present__text {
   margin: 0;
   margin-bottom: 28px;
   width: 321px;
-
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.6px;
   color: $basic-extra-dark;
 }

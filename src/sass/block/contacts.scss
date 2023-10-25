@@ -2,12 +2,14 @@
   padding: 64px;
   margin-bottom: 55px;
   background-image: url(/src/img/contacts/contacts-background.webp);
-  background-color: #fff;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
   border-radius: 16px;
 }
 
 .contacts__wrapper {
   padding: 40px;
+  padding-right: 30px;
   padding-bottom: 36px;
   width: 343px;
   background-color: $basic-extra-light;
@@ -28,10 +30,20 @@
 .contacts__address {
   margin: 0;
   margin-bottom: 24px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: $basic-extra-dark;
 }
 
 .contacts__phone {
   margin: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: $basic-extra-dark;
 
   a {
     text-decoration: none;
@@ -42,4 +54,8 @@
 .contacts__schedule {
   margin: 0;
   margin-bottom: 30px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
