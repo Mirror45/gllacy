@@ -1,0 +1,60 @@
+.present {
+  display: grid;
+  margin-bottom: 80px;
+}
+
+.present__title {
+  margin: 0;
+  margin-bottom: 56px;
+  width: 443px;
+  justify-self: center;
+
+  text-align: center;
+  word-spacing: 1px;
+  letter-spacing: -2px;
+}
+
+.present__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.present__column {
+  padding: 40px;
+  padding-bottom: 36px;
+
+  background-color: $special-neutral;
+  background-repeat: no-repeat;
+
+  border-radius: 16px;
+}
+
+.present--raspberry {
+  background-image: url(/src/img/photo-of-raspberries.png);
+  background-position: top 27px right 15px;
+  background-size: 182px;
+}
+
+.present--marshmallow {
+  background-image: url(/src/img/photo-of-marshmallow.png);
+  background-position: top 17px right 6px;
+  background-size: 234px;
+}
+
+.present__subtitles {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.present__text {
+  margin: 0;
+  margin-bottom: 28px;
+  width: 321px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  color: $basic-extra-dark;
+}

@@ -1,0 +1,34 @@
+.form-delivery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-delivery__label {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 16px;
+
+  &:nth-child(1) {
+    width: 117px;
+    margin-right: 16px;
+    margin-bottom: 18px;
+  }
+  &:nth-child(2) {
+    width: 287px;
+  }
+  &:nth-child(3) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.form-delivery__input {
+  padding: 8px 16px;
+  margin-top: 1px;
+}
+
+.form-delivery__button {
+  display: block;
+  margin: 0 auto;
+}

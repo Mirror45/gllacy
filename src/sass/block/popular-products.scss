@@ -1,0 +1,25 @@
+.popular-products {
+  display: grid;
+  margin-bottom: 80px;
+}
+
+.popular-products__title {
+  margin: 0;
+  margin-bottom: 107px;
+  width: 527px;
+  justify-self: center;
+
+  text-align: center;
+  letter-spacing: -1.9px;
+  word-spacing: 1px;
+}
+
+.popular-products__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

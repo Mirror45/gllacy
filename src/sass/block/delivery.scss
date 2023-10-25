@@ -1,0 +1,44 @@
+.delivery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 135px;
+  padding: 64px;
+  // padding-bottom: 61px;
+  padding-left: 100px;
+  margin-bottom: 80px;
+  background-image: url(/src/img/delivery/delivery-backgroung.webp);
+  background-repeat: no-repeat;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+}
+
+.delivery__wrapper {
+  padding-top: 103px;
+}
+
+.delivery__title {
+  margin: 0;
+  margin-bottom: 24px;
+  width: 356px;
+  letter-spacing: -2px;
+}
+
+.delivery__description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.delivery__form {
+  padding: 40px;
+  padding-bottom: 37px;
+  width: 500px;
+  background-color: $basic-extra-light;
+  border-radius: 8px;
+  box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
+  box-sizing: border-box;
+}
+
+.delivery__text {
+  margin: 0;
+  margin-bottom: 27px;
+}

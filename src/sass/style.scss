@@ -1,6 +1,18 @@
 @import "variables.scss";
-@import 'font.scss';
-@import 'global.scss';
-@import 'block/main-header.scss';
+@import "font.scss";
+@import "global.scss";
 
-@import 'block/main-footer.scss';
+@import "block/main-header.scss";
+@import "block/present.scss";
+@import "block/popular-products.scss";
+@import "block/advantages.scss";
+@import "block/news.scss";
+@import "block/blog.scss";
+@import "block/newslettes.scss";
+@import "block/delivery.scss";
+@import "block/form-delivery.scss";
+@import "block/contacts.scss";
+@import "block/card-product.scss";
+@import "block/main-footer.scss";
+@import "block/catalog-product.scss";
+@import "block/pagination.scss";

@@ -1,0 +1,45 @@
+.contacts {
+  padding: 64px;
+  margin-bottom: 55px;
+  background-image: url(/src/img/contacts/contacts-background.webp);
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.contacts__wrapper {
+  padding: 40px;
+  padding-bottom: 36px;
+  width: 343px;
+  background-color: $basic-extra-light;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(45, 52, 64, 0.12);
+  box-sizing: border-box;
+}
+
+.contacts__dl {
+  margin: 0;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.contacts__address {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.contacts__phone {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.contacts__schedule {
+  margin: 0;
+  margin-bottom: 30px;
+}

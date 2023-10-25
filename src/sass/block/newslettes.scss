@@ -1,0 +1,29 @@
+.newslettes {
+  padding: 6px;
+  background-image: url(/src/img/newslettes/newslettes-background.webp);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.newslettes__wrapper {
+  padding: 24px;
+  padding-right: 22px;
+  background-color: $basic-extra-light;
+  border-radius: 16px;
+}
+
+.newslettes__text {
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.newslettes__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newslettes__input {
+  width: 332px;
+  align-self: center;
+}
