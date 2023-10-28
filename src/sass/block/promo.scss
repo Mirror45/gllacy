@@ -1,0 +1,28 @@
+.promo__flex {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  min-height: 554px;
+}
+
+.promo__wrapper {
+  width: 470px;
+}
+
+.promo__title {
+  margin: 0 0 24px;
+  font-size: 36px;
+}
+
+.promo__text {
+  margin: 0 0 48px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.promo__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 26px;
+}
