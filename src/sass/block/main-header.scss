@@ -8,23 +8,6 @@
   color: $basic-extra-dark;
 }
 
-.main-header__active {
-  border-radius: 26px;
-
-  &:hover {
-    background-color: rgba($basic-extra-light, 0.5);
-  }
-
-  &:focus {
-    outline: 2px solid $basic-extra-dark;
-  }
-
-  &:active {
-    background-color: $basic-extra-light;
-    border-color: transparent;
-  }
-}
-
 .main-header__list {
   display: flex;
   align-items: center;
@@ -50,27 +33,45 @@
 
 .main-header__link {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 8px 16.5px;
   text-decoration: none;
   color: inherit;
+  border-radius: 26px;
 
   &--current {
     color: $basic-extra-light;
     background-color: $special-bright;
+  }
+
+  &:hover {
+    background-color: rgba($basic-extra-light, 0.5);
+  }
+
+  &:focus {
+    outline: 2px solid $basic-extra-dark;
+  }
+
+  &:active {
+    background-color: $basic-extra-light;
+    border-color: transparent;
   }
 }
 
 .user-navigation {
   display: flex;
   align-items: center;
-  column-gap: 18px;
 }
 
 .user-navigation__tel {
+  margin-right: 18px;
   color: inherit;
   text-decoration: none;
   font-weight: 700;
   cursor: pointer;
+}
+
+.user-navigation__search {
+  margin-right: 16px;
 }
 
 .user-navigation__button {
@@ -79,18 +80,36 @@
   min-height: 32px;
   align-items: center;
   justify-content: center;
-  column-gap: 6px;
   font-size: 14px;
   color: inherit;
   background-color: rgba($basic-extra-light, 0.3);
   border: none;
+  border-radius: 26px;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba($basic-extra-light, 0.5);
+  }
+
+  &:focus {
+    outline: 2px solid $basic-extra-dark;
+  }
+
+  &:active {
+    background-color: $basic-extra-light;
+    border-color: transparent;
+  }
 }
 
 .user-navigation__login .user-navigation__button {
   min-width: 92px;
+  margin-right: 16px;
 }
 
 .user-navigation__cart .user-navigation__button {
   min-width: 97px;
+}
+
+.user-navigation__img {
+  margin-right: 6px;
 }
