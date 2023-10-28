@@ -26,13 +26,13 @@
 }
 
 .present__column--raspberry {
-  background-image: url(/src/img/photo-of-raspberries.png);
+  background-image: url(/src/img/present/photo-of-raspberries.png);
   background-position: top 27px right 15px;
   background-size: 182px;
 }
 
 .present__column--marshmallow {
-  background-image: url(/src/img/photo-of-marshmallow.png);
+  background-image: url(/src/img/present/photo-of-marshmallow.png);
   background-position: top 17px right 6px;
   background-size: 234px;
 }
@@ -54,5 +54,10 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  color: $basic-extra-dark;
+}
+
+.present__button {
+  text-decoration: none;
   color: $basic-extra-dark;
 }

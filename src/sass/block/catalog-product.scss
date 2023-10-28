@@ -1,10 +1,16 @@
+.catalog__product {
+  padding-bottom: 79px;
+  margin-bottom: 44px;
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
+}
+
 .catalog-product__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 91px;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   padding: 0;
   list-style: none;
 }

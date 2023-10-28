@@ -20,6 +20,16 @@
   list-style-type: none;
 }
 
+.pagination__item {
+  &:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  &:nth-child(6) {
+    margin-right: 10px;
+  }
+}
+
 .pagination__link {
   display: flex;
   align-items: center;
@@ -29,6 +39,10 @@
   text-decoration: none;
   color: $basic-extra-dark;
   box-sizing: border-box;
+
+  &:first-child {
+    margin-right: 3px;
+  }
 
   &:hover {
     border-radius: 50%;
