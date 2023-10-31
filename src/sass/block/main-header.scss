@@ -71,7 +71,39 @@
 }
 
 .user-navigation__search {
+  position: relative;
   margin-right: 16px;
+}
+
+.user-navigation__search .popup {
+  position: absolute;
+  display: none;
+  top: 40px;
+  right: 0;
+  width: 356px;
+  padding: 24px 16px;
+  background-color: $basic-extra-light;
+  z-index: 3;
+}
+
+.user-navigation__search .input {
+  width: 100%;
+}
+
+.user-navigation .popup__close {
+  position: absolute;
+  top: 40px;
+  right: 32px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border: none;
+  opacity: 0.4;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .user-navigation__button {
@@ -101,6 +133,10 @@
   }
 }
 
+.user-navigation__login {
+  position: relative;
+}
+
 .user-navigation__login .user-navigation__button {
   min-width: 92px;
   margin-right: 16px;
@@ -110,6 +146,73 @@
   min-width: 97px;
 }
 
+.user-navigation__login .popup {
+  position: absolute;
+  top: 40px;
+  right: 17px;
+  display: none; //grid
+  width: 420px;
+  padding: 48px 48px 52px;
+  background-color: $basic-extra-light;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.user-navigation__login .popup__title {
+  margin: 0 0 32px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.user-navigation__login .popup__email {
+  margin-bottom: 16px;
+}
+
+.user-navigation__login .popup__password {
+  margin-bottom: 32px;
+}
+
+.user-navigation__login .popup__wrapper {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 6px;
+  align-items: end;
+}
+
+.user-navigation__login .button {
+  grid-row: 1/-1;
+  margin-right: 19px;
+}
+
+.user-navigation__login .popup__link {
+  font-size: 14px;
+  color: $basic-extra-dark;
+}
+
 .user-navigation__img {
   margin-right: 6px;
+}
+
+.user-navigation__cart {
+  position: relative;
+}
+
+.user-navigation__cart .popup {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  display: none;
+  width: 288px;
+  padding: 48px;
+  background-color: $basic-extra-light;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.user-navigation__cart .popup__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
 }
