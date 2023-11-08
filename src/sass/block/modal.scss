@@ -1,0 +1,50 @@
+.modal {
+  position: absolute;
+  top: 0;
+  display: none; //flex
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($basic-extra-dark, 0.3);
+  z-index: 10;
+}
+
+.modal-contacts {
+  position: relative;
+  display: grid;
+  align-self: flex-end;
+  gap: 16px;
+  width: 570px;
+  padding: 64px;
+  margin-bottom: 393px;
+  background-color: $basic-extra-light;
+  box-sizing: border-box;
+}
+
+.modal-contacts__title {
+  margin: 0 0 16px;
+  font-size: 24px;
+  line-height: 30px;
+  color: $basic-extra-dark;
+}
+
+.modal-contacts .button {
+  margin-top: 16px;
+  justify-self: end;
+}
+
+.modal__close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border: none;
+  opacity: 0.4;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}

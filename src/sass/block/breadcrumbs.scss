@@ -1,0 +1,32 @@
+.breadcrumbs {
+  color: $basic-extra-dark;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+
+  &:last-child .breadcrumbs__link {
+    text-decoration: none;
+  }
+
+  + .breadcrumbs__item::before {
+    margin: 0 8px;
+    width: 12px;
+    height: 12px;
+    background-image: url(/src/img/breadcrumbs/chevrons-right.svg);
+    content: "";
+  }
+}
+
+.breadcrumbs__link {
+  color: inherit;
+  font-weight: 700;
+}
