@@ -70,7 +70,7 @@
           </button>
           <form class="popup" action="" method="post">
             <input class="input" type="search" placeholder="Поиск по сайту">
-            <button class="popup__close">
+            <button class="popup__close" type="button">
               <img class="popup__img" src="/src/img/main-header/Cross.svg" width="16" height="16" alt="Закрыть">
             </button>
           </form>
@@ -86,7 +86,7 @@
             <input class="popup__email input" type="email" placeholder="email@example.com">
             <input class="popup__password input" type="password" placeholder="****">
             <div class="popup__wrapper">
-              <button class="button--accent button">Войти</button>
+              <button class="button--accent button" type="submit">Войти</button>
               <a class="popup__link" href="#">Забыли пароль?</a>
               <a class="popup__link" href="#">Регистрация</a>
             </div>
@@ -108,7 +108,7 @@
                   <span class="popup__span">1 кг х 310 ₽</span>
                 </p>
                 <p class="popup__price-item">310 ₽</p>
-                <button class="popup__close">
+                <button class="popup__close" type="button">
                   <img class="popup__img" src="/src/img/main-header/Cross.svg" width="16" height="16" alt="Закрыть">
                 </button>
               </li>
@@ -119,7 +119,7 @@
                   <span class="popup__span">1,5 кг х 320 ₽</span>
                 </p>
                 <p class="popup__price-item">480 ₽</p>
-                <button class="popup__close">
+                <button class="popup__close" type="button">
                   <img class="popup__img" src="/src/img/main-header/Cross.svg" width="16" height="16" alt="Закрыть">
                 </button>
               </li>
@@ -148,16 +148,41 @@
         </ul>
       </div>
 
+      <h2 class="title">Сливочное мороженое</h2>
+
       <form class="catalog-filter" action="" method="get">
-        <h2 class="title">Сливочное мороженое</h2>
         <fieldset class="catalog-filter__fieldset">
           <legend class="catalog-filter__legend">Сортировка:</legend>
+          <select class="catalog-filter__select">
+            <option value="poular" selected>по популярности</option>
+          </select>
         </fieldset>
         <fieldset class="catalog-filter__fieldset">
           <legend class="catalog-filter__legend">Цена: 100 ₽ – 500 ₽</legend>
+          <div class="catalog-filter__range range">
+            <div class="range__body">
+              <div class="range__range">
+                <button class="range__button" type="button">
+                  <span class="visually-hidden">Назад</span>
+                </button>
+                <button class="range__button" type="button">
+                  <span class="visually-hidden">Вперёд</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </fieldset>
         <fieldset class="catalog-filter__fieldset">
           <legend class="catalog-filter__legend">Жирность:</legend>
+          <div class="catalog-filter__wrapper">
+            <label class="catalog-filter__label">
+              <input class="visually-hidden" type="radio" name="fat">
+              <button class="catalog-filter__radio" type="button">
+                <span class="visually-hidden">Перключатель: 0%</span>
+              </button>
+              0%
+            </label>
+          </div>
         </fieldset>
         <fieldset class="catalog-filter__fieldset">
           <legend class="catalog-filter__legend">Наполнители:</legend>

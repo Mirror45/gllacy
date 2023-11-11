@@ -4,7 +4,7 @@
 
 .breadcrumbs__list {
   display: flex;
-  margin: 0 0 16px;
+  margin: 32px 0 16px;
   padding: 0;
   list-style: none;
 }
@@ -29,4 +29,5 @@
 .breadcrumbs__link {
   color: inherit;
   font-weight: 700;
+  font-size: 14px;
 }
