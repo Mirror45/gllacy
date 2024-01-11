@@ -1,11 +1,11 @@
 .catalog-filter {
-  display: grid;
-  grid-template-columns: repeat(3, min-content);
-  row-gap: 16px;
-  column-gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 821px;
   margin-bottom: 100px;
   color: $basic-extra-dark;
   font-size: 14px;
+  line-height: 20px;
 }
 
 .page__catalog .title {
@@ -15,6 +15,19 @@
 .catalog-filter__fieldset {
   padding: 0;
   border: none;
+
+  + .catalog-filter__fieldset {
+    margin-left: 24px;
+  }
+
+  &:first-child {
+    margin-bottom: 16px;
+  }
+
+  &:nth-child(4) {
+    margin: 0;
+    flex-grow: 1;
+  }
 }
 
 .catalog-filter__legend {
@@ -24,7 +37,7 @@
 
 .catalog-filter__select {
   min-width: 196px;
-  padding: 8px 16px;
+  padding: 10px 16px;
   border: none;
   border-radius: 20px;
   background-color: rgba($basic-extra-light, 0.3);
@@ -39,13 +52,17 @@
     background-color: rgba($basic-extra-light, 0.4);
     outline: 2px solid $basic-extra-light;
   }
+}
 
-  &::after {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    content: "";
-  }
+.catalog-filter__select-wrapper {
+  position: relative;
+}
+
+.catalog-filter__arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .catalog-filter__range {
@@ -113,8 +130,10 @@
   }
 }
 
-.catalog-filter__wrapper {
-  padding: 7px 16px;
+.catalog-filter__radio-wrapper {
+  display: flex;
+  min-width: 367px;
+  padding: 8px 16px;
   border-radius: 20px;
   background-color: rgba($basic-extra-light, 0.3);
   box-sizing: border-box;
@@ -123,6 +142,7 @@
 .catalog-filter__label {
   display: flex;
   align-items: center;
+  text-wrap: nowrap;
 
   + .catalog-filter__label {
     margin-left: 16px;
@@ -134,9 +154,15 @@
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  border: 1px solid $basic-extra-dark;
+  border: 1px solid currentColor;
   border-radius: 50%;
   background-color: transparent;
+  color: $basic-extra-dark;
+  cursor: pointer;
+
+  &:hover {
+    color: $basic-extra-light;
+  }
 }
 
 input:checked + .catalog-filter__radio::before {
@@ -146,7 +172,72 @@ input:checked + .catalog-filter__radio::before {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: $basic-extra-dark;
+  background-color: currentColor;
   transform: translate(-50%, -50%);
   content: "";
+}
+
+input:disabled + .catalog-filter__radio {
+  color: $basic-extra-dark;
+  opacity: 0.4;
+  cursor: default;
+}
+
+.catalog-filter__checkbox-wrapper {
+  display: flex;
+  min-width: 596px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+  box-sizing: border-box;
+}
+
+.catalog-filter__checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  color: transparent;
+  outline: 1px solid $basic-extra-dark;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    outline: none;
+    color: $basic-extra-light;
+  }
+}
+
+input:checked + .catalog-filter__checkbox {
+  outline: none;
+  color: $basic-extra-dark;
+
+  &:hover {
+    color: $basic-extra-light;
+  }
+}
+
+input:disabled + .catalog-filter__checkbox {
+  opacity: 0.4;
+}
+
+.catalog-filter__submit {
+  align-self: flex-end;
+  min-width: 187px;
+  margin-left: 24px;
+  padding: 8px;
+  border: 2px solid $basic-extra-light;
+  background-color: rgba($basic-extra-light, 0.3);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-extra-light;
+  }
+
+  &:focus {
+    background-color: rgba($basic-extra-light, 0.3);
+    border-color: $basic-extra-dark;
+  }
 }
